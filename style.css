@@ -1,6 +1,7 @@
 body {
   background: #fafafa;
   font-family: arial;
+  cursor: none;
 }
 
 h1, p {
