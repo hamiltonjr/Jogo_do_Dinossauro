@@ -1,5 +1,6 @@
 body {
   background: #fafafa;
+  font-family: arial;
 }
 
 .dino {
@@ -22,7 +23,6 @@ body {
   text-align: center;
   color: #666;
   margin: 50px 0;
-  font-family: arial;
 }
 
 @keyframes slideright {

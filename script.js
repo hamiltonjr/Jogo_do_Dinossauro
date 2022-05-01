@@ -5,15 +5,20 @@ let isJumping = false;
 let isGameOver = false;
 let position = 0;
 
-function handleKeyUp(event) {
-  if (event.keyCode === 32) {
-    if (!isJumping) {
+let handleKeyUp = (event) => {
+  if (event.keyCode === 32 || event.keyCode === 38) {
+    if (!isJumping) { 
       jump();
-    }
+    } 
   }
+
+  if (event.keyCode === 13) {
+    window.location.href = 'index.html';
+    } 
 }
 
-function jump() {
+
+let jump = () => {
   isJumping = true;
 
   let upInterval = setInterval(() => {
@@ -38,7 +43,8 @@ function jump() {
   }, 20);
 }
 
-function createCactus() {
+
+let createCactus = () => {
   const cactus = document.createElement('div');
   let cactusPosition = 1000;
   let randomTime = Math.random() * 6000;
@@ -67,6 +73,7 @@ function createCactus() {
 
   setTimeout(createCactus, randomTime);
 }
+
 
 createCactus();
 document.addEventListener('keyup', handleKeyUp);
