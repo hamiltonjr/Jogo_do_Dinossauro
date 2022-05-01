@@ -7,6 +7,7 @@ Mudanças feitas:
 - refatoração: troca para a sintaxe seta de funções m(mais moderna)
 
 Não deu tempo de mudar:
+- inclusão de som (uns bipes)
 - inclusão de pontos e hi-score
 - alteração da cor de fundo para simular a noite depois de um certo tempo
 
